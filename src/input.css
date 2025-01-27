@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+    --color-savoyblue: #4E5DA6;
+    --color-cb: #D6EDFF;
+    --color-ub: #59AED9;
+    --color-hg: #5DAC98;
+}
+
+#teacup {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.animation-1 {
+    display: block;
+    border-right: 4px solid #4E5DA6;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type1 0.4s steps(4), cursor1 0.8s 2 alternate, stopCursor1 0.1s infinite 1s;
+}
+
+@keyframes type1 {
+    0% { width: 0%; }
+    100% {width: 15%; }
+}
+
+@keyframes cursor1 {
+    50% { border-color: transparent; }
+}
+
+@keyframes stopCursor1 {
+    0% { border-color: transparent; }
+    100% { border-color: transparent; }
+}
+
+.animation-2 {
+    width: 0%;
+    display: block;
+    border-right: 4px solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type2 0.8s steps(20) 1s forwards, cursor2 0.8s step-end 1s infinite alternate, stopCursor2 0.1s 2.5s forwards;
+}
+
+@keyframes type2 {
+    0% { width: 0%; }
+    100% {width: 87.5%;}
+}
+
+@keyframes cursor2 {
+    0% { border-color: #4E5DA6; }
+    50% { border-color: transparent; }
+}
+
+@keyframes stopCursor2 {
+    0% { border-color: transparent; }
+    100% { border-color: transparent; }
+}
+
+.animation-3 {
+    width: 0%;
+    display: block;
+    border-right: 4px solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type3 1s steps(38) 3.5s forwards, cursor3 0.8s step-end 2.5s infinite alternate, stopCursor3 0.1s 5.5s forwards;
+}
+
+@keyframes type3 {
+    0% { width: 0%; }
+    100% {width: 53%;}
+}
+
+@keyframes cursor3 {
+    0% { border-color: #4E5DA6; }
+    50% { border-color: transparent; }
+}
+
+@keyframes stopCursor3 {
+    0% { border-color: transparent; }
+    100% { border-color: transparent; }
+}
+
+.animation-4 {
+    width: 0%;
+    display: block;
+    border-right: 4px solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type4 1s steps(30) 6s forwards, cursor4 0.8s step-end 5.5s infinite alternate;
+}
+
+@keyframes type4 {
+    0% { width: 0%; }
+    100% {width: 45%;}
+}
+
+@keyframes cursor4 {
+    0% { border-color: #4E5DA6; }
+    50% { border-color: transparent; }
+}
